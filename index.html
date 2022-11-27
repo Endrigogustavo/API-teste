@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Simple Map</title>
+    
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="indes.js"></script>
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <!-- 
+     The `defer` attribute causes the callback to execute after the full HTML
+     document has been parsed. For non-blocking uses, avoiding race conditions,
+     and consistent behavior across browsers, consider loading using Promises
+     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+    -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoGCwFRbSuOpB22ZpPxMySCdEQv1MEi9o&callback=initMap&v=weekly"
+      defer
+    ></script>
+  </body>
+</html>
+<!--https://developers.google.com/maps/documentation/javascript/overview#maps_map_simple-javascript-->
+<!--https://console.cloud.google.com/google/maps-apis/start?ref=https:%2F%2Fdevelopers.google.com%2Fmaps%2F-->
